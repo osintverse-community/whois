@@ -24,7 +24,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/whois@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/whois@sha256:683b1eb04b480236009bdd0d62308ef25851ab6a4c815a3d693cfa13c7178f85
   platforms: [linux/amd64, linux/arm64]
   command: ["whois", "-H", "{query}"]
   output_format: text
